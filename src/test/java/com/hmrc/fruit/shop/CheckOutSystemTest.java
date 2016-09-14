@@ -27,7 +27,7 @@ public class CheckOutSystemTest {
 	}
 
 	@Test
-	public void testPrintReceiptApplesAndOrnages() {
+	public void testPrintReceiptApplesAndOranges() {
 		String[] fruits = { "Apple", "Apple", "Orange", "Apple" };
 		List<String> basket = Arrays.asList(fruits);
 		
@@ -50,7 +50,7 @@ public class CheckOutSystemTest {
 	}
 
 	@Test
-	public void testPrintReceiptOrnages() {
+	public void testPrintReceiptOranges() {
 		String[] fruits = { "Orange", "Orange", "Orange", "Orange" };
 		List<String> basket = Arrays.asList(fruits);
 		String expectedPrice = symbol + "1.00";
@@ -59,7 +59,7 @@ public class CheckOutSystemTest {
 	}
 
 	@Test
-	public void testPrintReceiptApplesAndOrnagesRandomOrder() {
+	public void testPrintReceiptApplesAndOrangesRandomOrder() {
 		String[] fruits = { "Apple", "Orange", "Apple", "Orange" };
 		List<String> basket = Arrays.asList(fruits);
 		String checkoutPrice = checkOutSystem.printReceipt(basket);
